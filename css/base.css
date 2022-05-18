@@ -1,0 +1,318 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Typography
+	#Links
+	#Buttons
+	#Browser Fix
+	#Misc
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing :border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; 
+		text-decoration:none;}
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+		
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+}
+
+*::-moz-selection {
+    background: #111111;
+    color: #ffffff;
+}
+
+a:focus {
+outline: 0;
+}
+
+iframe{width:100%;frameborder:0;}
+	
+
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: #ffffff;
+		font: 14px/21px 'ralewayregular', Arial, sans-serif;
+		color: #9d9d9d;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+		-webkit-text-stroke: 0.30px;
+ }
+
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {color: #343434;font-weight: normal;text-transform:uppercase; }
+	h1.title{font-size:22px;margin-bottom:15px;}
+	
+	
+	.title:before, .prfTitle:before {
+	    border-bottom: 2px solid #000000;
+	    content: "";
+	    display: block;
+	    margin-bottom: 50px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    position: relative;
+	    top: 30px;
+	    width: 45px;
+	    z-index: 0;
+	}
+	
+	
+	
+	h2{font-size:18px;text-transform:uppercase;}
+	h3{font-size:16px;margin-bottom:10px;}
+	
+	p{line-height:25px;}
+	em { font-style: italic; }
+	strong { font-weight: bold; color: #333; }
+	small { font-size: 80%; }
+	
+	
+	.caption h1, .tProfile h3, .itemDesc h3, .postDate h3, .skillbarTitle {font-family: 'ralewaybold', Arial, sans-serif;}
+	.contactForm input[type="text"], .contactForm textarea, .replyForm input[type="text"], .replyForm textarea, .contactForm textarea, .replyForm textarea {font-family: 'ralewaylight',Arial, sans-serif;}
+	.doubleBtn .choose , .testiSlider li .testiProfile span ,.itemDesc span, h1.projTitle span , .postDate span , .postSingle blockquote, .sub h4, h1.prfTitle span,.tagsCloud , .detLeft h3 span, .detRight h3 span, span.date {font-family: 'open_sanslight_italic',Arial, sans-serif;}
+	.doubleBtn a,  .service h2, .testiSlider li .testiProfile, .singleDetails h1, .postDetails h1, .allPosts a,.postTitle h1, .postTitle h1 a, .commentscountTitle h1, .respondTitle h1, .tagsSingle h4, .comments h2.count, .comments .reply-btn a , .respond h2, .widget h2, .contactForm #submit, .replyForm #submit, .contactInfo h1, h1.prfTitle, .intro h1, .info h1, .info ul span, .emTitle, .edTitle, .skill h1, .detLeft h3, .detRight h3 {font-family: 'ralewaysemibold', Arial, sans-serif;}
+	 h1.title {font-family: 'ralewaymedium',Arial, sans-serif;}
+
+
+
+
+
+/* #Links
+================================================== */
+	
+	a,.errorForm, .contactForm #submit,.tactive span, .pagination ul li span, .replyForm #submit, .shortFolio span, .shortContact span  {
+		
+		transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out 0s;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		
+	}
+	
+	
+	
+	.btn a:hover, .tagsListSingle li a:hover, .tagsList li a:hover, .contactForm #submit:hover , .replyForm #submit:hover,
+	.projSocials li a:hover, .projNav li a:hover, .comments .reply-btn a:hover, .comments .reply-btn a   {
+		color:#C3512F;
+	}
+
+	
+
+
+
+/* #Buttons
+================================================== */
+
+	.doubleBtn{
+		position: relative;
+	}
+	
+	.doubleBtn a {
+	    background: #ffffff;
+	    color: #343434;
+	    display: inline-block;
+	    font-size: 13px;
+	    padding: 8px 0;
+		min-width: 135px;
+	    text-transform: uppercase;
+	}
+
+
+	.doubleBtn.profileBtn a{
+		min-width: 120px;
+		text-align:center;
+		background: #ffffff;
+	}
+	
+
+
+	.doubleBtn.itemBtn a{
+		min-width: 60px;
+		text-align:center;
+		font-size:13px;
+		background: rgba(255,255,255,0);
+		color:#ffffff;
+		padding: 5px 0;
+	}
+
+
+
+	.doubleBtn.profileBtn .choose, .doubleBtn.personalBtn .choose{
+		background: #ffffff;
+	}
+
+	.doubleBtn .choose {
+	    background:#FAFAFA;
+	    color: #C3512F;
+	    display: block;
+	    font-size: 11px;
+	    height: 10px;
+	    left: 50%;
+	    margin: -12px 0 0 -13px;
+	    padding: 12px 0;
+	    position: absolute;
+	    text-align: center;
+	    top: 50%;
+	    width: 27px;
+	}
+
+	.doubleBtn .choose i {
+	    display: block;
+	    margin-left: -1px;
+	    margin-top: -10px;
+	}
+
+
+	.doubleLeft {
+	    border-radius: 40px 0 0 40px;
+		-webkit-border-radius: 40px 0 0 40px;
+		-moz-border-radius: 40px 0 0 40px;
+		-ms-border-radius: 40px 0 0 40px;
+		-o-border-radius: 40px 0 0 40px;
+		border-top:1px solid #dcdcdc;
+		border-right:0;
+		border-left:1px solid #dcdcdc;
+		border-bottom:1px solid #dcdcdc;
+	}
+
+
+	.doubleRight {
+	    border-radius: 0 40px 40px 0;
+		-webkit-border-radius:0 40px 40px 0;
+		-moz-border-radius: 0 40px 40px 0;
+		-ms-border-radius: 0 40px 40px 0;
+		-o-border-radius: 0 40px 40px 0;
+	    margin-left: -4px;
+		border-top:1px solid #dcdcdc;
+		border-right:1px solid #dcdcdc;
+		border-left:1px solid #dcdcdc;
+		border-bottom:1px solid #dcdcdc;
+	}	
+	
+	
+	.btn{
+		margin-top:20px;
+	}
+
+	.btn a{
+		background:rgba(0,0,0,0);
+		color:#343434;
+		padding:8px 25px;
+		display:inline-block;
+		border:1px solid #DCDCDC;
+		text-transform:uppercase;
+		font-family: 'ralewaysemibold';
+	}
+	
+	
+	.btn.more a{
+		font-size:12px;
+	}
+
+
+
+	
+	
+	.btn a, .contactForm #submit, .replyForm #submit, .tagsList li a , .tagsListSingle li a    {
+	    border-radius: 40px;
+		-webkit-border-radius: 40px;
+		-moz-border-radius: 40px;
+		-ms-border-radius: 40px;
+		-o-border-radius: 40px;
+	}
+	
+	
+	.doubleBtn .choose, .projSocials li a, .projNav li a, .pagination ul li , .imgProfile, .imgProfile img, .timeLineIco span.ico  {
+	    border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		-ms-border-radius: 100%;
+		-o-border-radius: 100%;
+}
+
+
+	
+	
+/* #Browser Fix
+================================================== */
+		
+		
+		
+		.searchForm input[type="text"],.pagination ul li , .contactForm input[type="text"], .contactForm textarea, 
+		.replyForm input[type="text"], .replyForm textarea, .comments .img, .doubleBtn .choose, .post .postDetails , .projSocials li a, .projNav li a, .imgProfile, .imgProfile img, .emSingle, .edSingle, .detLeft, .detRight, .timeLineIco span.ico {
+		    box-sizing:border-box;
+			-moz-box-sizing:border-box; /* Firefox */
+		}
+
+
+
+
+
+
+/* #Misc
+================================================== */
+	.ofsBottom{margin-bottom:80px;}
+	.tCenter {text-align: center;}
+	.ofsTop{padding-top:80px;}
+	.ofsInTop{padding-top:60px;}
+	.ofsInBottom{padding-bottom:60px;}
+	.ofsTSmall{padding-top:20px;} 
+	.ofsBSmall{padding-bottom:40px;}
+	.singleOffset{margin-top:200px;}
+	.blogSingle.singleOffset {margin-top: 150px;}
+	.bgGrey{background:#fafafa;}
+
+
